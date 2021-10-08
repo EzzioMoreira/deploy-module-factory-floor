@@ -12,14 +12,6 @@ terraform {
 }
 
 module "dev_cluster" {
-  source        = "git@github.com:EzzioMoreira/module-factory-floor.git?ref=v1.0"
+  source        = "git@github.com:EzzioMoreira/module-factory-floor.git?ref=main"
   environment   = "development"
-  default_tags  = {
-    Name        : "App-Web01",
-    Team        : "IAC",
-    Application : "Rapadura",
-    Environment : "development",
-    Terraform   : "Yes",
-    Owner       : "Metal.Corp"
-  }
 }
