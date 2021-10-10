@@ -28,3 +28,7 @@ output "vpc_id" {
 output "subnet_private" {
   value = module.dev_cluster.subnet_private
 }
+
+output "subnet_public" {
+  value = module.dev_cluster.subnet_public
+}
