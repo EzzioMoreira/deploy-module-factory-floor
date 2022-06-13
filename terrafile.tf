@@ -5,15 +5,15 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "your-bucket-here"
-    key    = "path/keyname-terraform-.tfstate"
+    bucket = "network-metalcorp"
+    key    = "network/metalcorp.tfstate"
     region = "us-east-2"
   }
 }
 
 module "dev_cluster" {
   source         = "git@github.com:EzzioMoreira/module-factory-floor.git?ref=v1.1"
-  environment    = "you-environment-here"
+  environment    = "production"
   vpc_cidr_block = "10.2.0.0/16"
 }
 
