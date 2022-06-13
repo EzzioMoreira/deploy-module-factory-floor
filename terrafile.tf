@@ -12,7 +12,7 @@ terraform {
 }
 
 module "dev_cluster" {
-  source         = "git@github.com:EzzioMoreira/module-factory-floor.git?ref=v1.1"
+  source         = "git::https://github.com/EzzioMoreira/module-factory-floor.git?ref=v1.1"
   environment    = "production"
   vpc_cidr_block = "10.2.0.0/16"
 }
