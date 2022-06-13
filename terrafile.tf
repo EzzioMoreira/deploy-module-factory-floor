@@ -32,3 +32,4 @@ output "subnet_private" {
 output "subnet_public" {
   value = module.dev_cluster.subnet_public
 }
+
